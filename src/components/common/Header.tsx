@@ -34,7 +34,7 @@ const Header: React.FC = () => {
 
         {/* Resume Button - Desktop */}
         <div className="hidden lg:block">
-          <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
+          <a href="/Resume.pdf" download target="_blank" rel="noopener noreferrer">
             <Button
               variant="primary"
               rightImage={{
@@ -79,7 +79,7 @@ const Header: React.FC = () => {
               </li>
             ))}
             <li>
-              <a href="/resume.pdf" download target="_blank" rel="noopener noreferrer">
+              <a href="/Resume.pdf" download target="_blank" rel="noopener noreferrer">
                 <Button
                   variant="primary"
                   rightImage={{
