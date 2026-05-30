@@ -17,10 +17,9 @@
     "strict": true,
     "noFallthroughCasesInSwitch": true,
     "esModuleInterop": true,
-    "baseUrl": "./src",
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
     }
   },

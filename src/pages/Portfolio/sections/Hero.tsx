@@ -41,7 +41,7 @@ const Hero: React.FC = () => {
 
             <motion.div
               variants={containerVariants}
-              className="mt-[20px] flex w-auto flex-row items-center justify-start md:mt-[40px]"
+              className="mt-[20px] flex w-full flex-row flex-wrap items-center justify-start gap-[12px] md:gap-[24px] md:mt-[40px]"
             >
               <motion.a
                 variants={itemVariants}
@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
                 href="https://github.com/ankitgautam2003"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group ml-[16px] flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:ml-[32px] md:p-[18px]"
+                className="group flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:p-[18px]"
               >
                 <img
                   src="https://pngimg.com/uploads/github/github_PNG40.png"
@@ -74,7 +74,7 @@ const Hero: React.FC = () => {
                 href="https://x.com/ankit_gautam_03"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group ml-[16px] flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:ml-[32px] md:p-[18px]"
+                className="group flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:p-[18px]"
               >
                 <img
                   src="/images/img_social_icon_black_900.svg"
@@ -87,11 +87,50 @@ const Hero: React.FC = () => {
                 href="https://www.instagram.com/ankit_gautam_03/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group ml-[16px] flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:ml-[32px] md:p-[18px]"
+                className="group flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:p-[18px]"
               >
                 <img
                   src="https://static.vecteezy.com/system/resources/previews/014/414/683/non_2x/instagram-black-logo-on-transparent-background-free-vector.jpg"
                   alt="Insta Icon"
+                  className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
+                />
+              </motion.a>
+              <motion.a
+                variants={itemVariants}
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:p-[18px]"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/152/152810.png"
+                  alt="YouTube Icon"
+                  className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
+                />
+              </motion.a>
+              <motion.a
+                variants={itemVariants}
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:p-[18px]"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/52/52053.png"
+                  alt="Reddit Icon"
+                  className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
+                />
+              </motion.a>
+              <motion.a
+                variants={itemVariants}
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex cursor-pointer flex-col items-center justify-start rounded-[4px] border-2 border-global-1 bg-white p-[9px] transition-colors hover:bg-global-1 md:p-[18px]"
+              >
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/20/20673.png"
+                  alt="Facebook Icon"
                   className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
                 />
               </motion.a>

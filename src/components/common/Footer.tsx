@@ -1,4 +1,5 @@
 import React, { useState, FormEvent } from 'react';
+import { Link } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 import Button from '../ui/Button';
 import EditText from '../ui/EditText';
@@ -43,9 +44,10 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full flex flex-col justify-center items-center bg-global-3 py-[30px] md:py-[60px]">
-      <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[80px]">
-        {/* ✅ Contact Heading */}
+    <>
+      <section className="w-full flex flex-col justify-center items-center bg-global-3 py-[30px] md:py-[60px]">
+        <div className="w-full max-w-[1280px] mx-auto px-4 sm:px-6 md:px-8 lg:px-[80px]">
+          {/* ✅ Contact Heading */}
         <div className="w-full flex justify-center items-center mb-10">
           <span
             id="contact-me"
@@ -99,30 +101,14 @@ const Footer: React.FC = () => {
             </div>
 
             {/* Buttons + Socials */}
-            <div className="flex flex-col sm:flex-row gap-[12px] md:gap-[24px] justify-start items-center w-full">
-              <Button
-                type="submit"
-                disabled={status === 'sending'}
-                className={`text-[16px] md:text-[20px] font-sora font-semibold text-left
-                ${
-                  status === 'sending'
-                    ? 'bg-global-2 text-white cursor-not-allowed'
-                    : 'bg-white text-black hover:bg-black hover:text-white transition-colors'
-                }
-                rounded-[4px] px-[10px] py-[6px] md:px-[20px] md:py-[12px] w-full sm:w-auto border border-global-5`}
+            <div className="flex flex-row flex-wrap gap-[10px] md:gap-[20px] justify-start items-stretch w-full">
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/ankit-gautam-85a807259/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group flex justify-center items-center bg-white border border-global-1 rounded-[4px] p-[9px] md:p-[18px] hover:bg-black transition-colors"
               >
-                {status === 'sending' ? 'Sending...' : 'Get In Touch'}
-              </Button>
-
-              {/* Social Icons */}
-              <div className="flex flex-row gap-[10px] md:gap-[20px] justify-center items-center">
-                {/* LinkedIn */}
-                <a
-                  href="https://www.linkedin.com/in/ankit-gautam-85a807259/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex justify-center items-center bg-white border border-global-1 rounded-[4px] p-[9px] md:p-[18px] hover:bg-black transition-colors"
-                >
                   <img
                     src="https://www.shareicon.net/data/2016/07/13/606885_linkedin_2048x2048.png"
                     alt="linkedin Icon"
@@ -171,7 +157,63 @@ const Footer: React.FC = () => {
                     className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
                   />
                 </a>
-              </div>
+
+                {/* YouTube */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex justify-center items-center bg-white border border-global-1 rounded-[4px] p-[9px] md:p-[18px] hover:bg-black transition-colors"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/152/152810.png"
+                    alt="YouTube Icon"
+                    className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
+                  />
+                </a>
+
+                {/* Reddit */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex justify-center items-center bg-white border border-global-1 rounded-[4px] p-[9px] md:p-[18px] hover:bg-black transition-colors"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/52/52053.png"
+                    alt="Reddit Icon"
+                    className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
+                  />
+                </a>
+
+                {/* Facebook */}
+                <a
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group flex justify-center items-center bg-white border border-global-1 rounded-[4px] p-[9px] md:p-[18px] hover:bg-black transition-colors"
+                >
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/20/20673.png"
+                    alt="Facebook Icon"
+                    className="h-[10px] w-[10px] group-hover:invert md:h-[20px] md:w-[20px]"
+                  />
+                </a>
+
+                {/* Submit Button */}
+                <Button
+                  type="submit"
+                  disabled={status === 'sending'}
+                  className={`flex-grow text-[16px] md:text-[20px] font-sora font-semibold text-center
+                  ${
+                    status === 'sending'
+                      ? 'bg-global-2 text-white cursor-not-allowed'
+                      : 'bg-black text-white hover:bg-white hover:text-black transition-colors'
+                  }
+                  rounded-[4px] px-[20px] py-[9px] md:py-[18px] border border-global-1`}
+                >
+                  {status === 'sending' ? 'Sending...' : 'Get In Touch'}
+                </Button>
             </div>
 
             {/* Form Status */}
@@ -193,7 +235,7 @@ const Footer: React.FC = () => {
               memorable digital experiences.
             </p>
             <p className="text-[14px] md:text-[16px] font-sora font-normal text-global-3">
-              Whether you have a project, an idea, or just want to connect—feel free to reach out.
+              Whether you have a project, an idea, or just want to connect feel free to reach out.
             </p>
             <div className="flex flex-col gap-[2px]">
               <span className="text-[18px] md:text-[28px] font-sora font-semibold text-global-1">
@@ -205,8 +247,44 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+        </div>
+      </section>
+
+      {/* Modern Professional Footer */}
+      <footer className="w-full flex flex-col items-center justify-start bg-global-1 pt-[40px] pb-[20px] px-4 sm:px-6 md:px-8 lg:px-[80px]">
+        <div className="w-full max-w-[1280px] mx-auto flex flex-col gap-8 md:gap-10">
+          
+          <div className="flex flex-col md:flex-row items-center justify-between w-full gap-6">
+            {/* Top Logo */}
+            <div className="flex items-center">
+              <Link to="/">
+                <img src="/images/MY_LOGO.png" alt="Personal Logo" className="w-[60px] h-[60px] md:w-[80px] md:h-[80px] object-contain" />
+              </Link>
+            </div>
+            
+            {/* Navigation Links */}
+            <nav className="flex flex-wrap gap-4 md:gap-8 justify-center items-center">
+              <a href="/#home" className="text-[14px] md:text-[16px] font-sora font-medium text-white hover:text-global-4 transition-colors">Home</a>
+              <a href="/#skills" className="text-[14px] md:text-[16px] font-sora font-medium text-white hover:text-global-4 transition-colors">Skills</a>
+              <a href="/#experience" className="text-[14px] md:text-[16px] font-sora font-medium text-white hover:text-global-4 transition-colors">Experience</a>
+              <a href="/#about-me" className="text-[14px] md:text-[16px] font-sora font-medium text-white hover:text-global-4 transition-colors">About</a>
+              <Link to="/projects" className="text-[14px] md:text-[16px] font-sora font-medium text-white hover:text-global-4 transition-colors">Projects</Link>
+              <a href="/#contact-me" className="text-[14px] md:text-[16px] font-sora font-medium text-white hover:text-global-4 transition-colors">Contact</a>
+            </nav>
+          </div>
+
+          {/* Divider */}
+          <div className="w-full h-[1px] bg-white opacity-20"></div>
+
+          <div className="flex flex-col items-center justify-center w-full">
+            {/* Made By Text */}
+            <span className="text-center font-sora text-[12px] md:text-[14px] text-white/50">
+              Made by Ankit Gautam
+            </span>
+          </div>
+        </div>
+      </footer>
+    </>
   );
 };
 

@@ -61,22 +61,6 @@ const AllProjects: React.FC = () => {
       </motion.div>
 
       <Footer />
-
-      {/* Bottom Footer identical to homepage */}
-      <div className="flex w-full flex-row items-center justify-start bg-global-1 py-[12px] md:py-[24px]">
-        <div className="mx-auto w-full max-w-[1280px] px-4 sm:px-6 md:px-8 lg:px-[80px]">
-          <div className="flex w-full flex-col items-center justify-between gap-4 md:flex-row">
-            <div className="flex w-auto flex-row items-center justify-start">
-              <img src="/images/MY_LOGO.png" alt="Personal Logo" className="w-[100px] md:w-[100px] h-[100px] md:h-[100px]" />
-            </div>
-            <div className="flex flex-1 flex-col items-end justify-start gap-[3px] md:gap-[6px]">
-              <span className="text-right font-sora text-[8px] font-semibold leading-[11px] text-global-5 md:text-[16px] md:leading-[21px]">
-                Made by Ankit Gautam
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   );
 };
