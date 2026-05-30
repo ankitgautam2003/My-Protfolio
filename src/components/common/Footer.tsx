@@ -219,7 +219,7 @@ const Footer: React.FC = () => {
             {/* Form Status */}
             {status === 'success' && <p className="text-green-500">Thanks for reaching out, I’ll get back to you shortly.</p>}
             {status === 'error' && (
-              <p className="text-red-500">Looks like the last message didn’t go through. Trying again now!</p>
+              <p className="text-red-500">Looks like last message didn’t go through. Trying again now!</p>
             )}
           </form>
 
