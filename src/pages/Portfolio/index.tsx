@@ -44,25 +44,52 @@ const Portfolio: React.FC = () => {
   ];
 
   const experiences: ExperienceItemData[] = [
-    {
-      company: 'CodexVeer',
-      logo: '/images/CodexVeer.jpeg',
-      position: 'Full-Stack Developer Intern',
-      duration: 'May 2025 - July 2025',
-      description:
-        'Developed responsive Flutter UI components using clean architecture and advanced state handling, enhancing usability across Android and web applications. Translated Figma prototypes into pixel-perfect interfaces and integrated RESTful APIs with Node.js and MongoDB to deliver scalable backend features.',
-      isHighlighted: true,
-    },
-    {
-      company: 'MEDHWAN EduTech',
-      logo: '/images/medhwan_logo.jpg',
-      position: 'Front-End Developer [Freelancer]',
-      duration: 'May 2025 - June 2025',
-      description:
-        "Developed and optimized responsive frontend components for MEDHWAN EduTech's 'Prajawal' platform, building an intuitive design system for visual consistency. Collaborated on the seamless integration of user interfaces with backend APIs for robust functionality.",
-      isHighlighted: true,
-    },
-  ];
+  {
+    company: 'GEO SEO Lab',
+    logo: 'https://geoseolab.com/_next/static/media/GeoSeoLogo.24d2f681.webp',
+    position: 'Software Engineer Intern',
+    duration: 'Apr 2026 - Present',
+    description:
+      'Working on scalable web applications, AI-powered solutions, and modern software infrastructure. Contributing to frontend and backend development while collaborating on SEO and analytics-based platforms.',
+    isHighlighted: true,
+  },
+  {
+    company: 'Indian Oil Corporation Limited (IOCL)',
+    logo: 'https://tse3.mm.bing.net/th/id/OIP.Z5W24xbACcuB0cW8LHky0wHaJ4?r=0&pid=ImgDet&w=187&h=249&c=7&dpr=1.3&o=7&rm=3',
+    position: 'Software Engineer Intern',
+    duration: 'Feb 2026 - Apr 2026',
+    description:
+      'Worked on software development and automation solutions during the internship. Assisted in developing and optimizing internal tools and gained hands-on experience with enterprise-level workflows and deployment practices.',
+    isHighlighted: true,
+  },
+  {
+    company: 'Cardireach Technologies',
+    logo: 'https://cardireach.com/Company_Logo.webp',
+    position: 'Software Engineer Intern',
+    duration: 'Aug 2025 - Feb 2026',
+    description:
+      'Developed backend and web-based solutions while contributing to software infrastructure and scalable application development. Worked remotely with the team on improving performance and implementing modern development practices.',
+    isHighlighted: true,
+  },
+  {
+    company: 'CodexVeer',
+    logo: 'https://www.codexveer.com/static/media/codexveer-logo-phone.fef5347d28e5c847c5a6.png',
+    position: 'Full-Stack Developer Intern',
+    duration: 'May 2025 - July 2025',
+    description:
+      'Developed responsive Flutter UI components using clean architecture and advanced state handling, enhancing usability across Android and web applications. Translated Figma prototypes into pixel-perfect interfaces and integrated RESTful APIs with Node.js and MongoDB to deliver scalable backend features.',
+    isHighlighted: true,
+  },
+  {
+    company: 'MEDHWAN EduTech',
+    logo: '/images/medhwan_logo.jpg',
+    position: 'Front-End Developer [Freelancer]',
+    duration: 'May 2025 - June 2025',
+    description:
+      "Developed and optimized responsive frontend components for MEDHWAN EduTech's 'Prajawal' platform, building an intuitive design system for visual consistency. Collaborated on the seamless integration of user interfaces with backend APIs for robust functionality.",
+    isHighlighted: true,
+  },
+];
 
   const projects: ProjectItemData[] = [
     {
